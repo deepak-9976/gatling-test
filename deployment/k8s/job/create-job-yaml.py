@@ -20,13 +20,13 @@ def parse_args():
                         default=f"job.yaml",
                         help='Job filename')
     parser.add_argument('--name',
-                        default=f"gatling-test-example-{id}",
+                        default=f"gatling-test-{id}",
                         help='Job name')
     parser.add_argument('--java_opts',
                         default='-DbaseUrl=http://localhost:8080 -DrequestPerSecond=10 -DdurationMin=0.25',
                         help='Java opts')
     parser.add_argument('--simulation',
-                        default="gatling.test.example.simulation.ExampleGetSimulation",
+                        default="com.github.deepak9976.gatlingtest.simulation.ExampleGetSimulation",
                         help='Simulation name')
     return parser.parse_args()
 

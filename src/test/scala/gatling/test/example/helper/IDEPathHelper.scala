@@ -1,4 +1,4 @@
-package gatling.test.example.helper
+package com.github.deepak9976.gatlingtest.helper
 
 import java.nio.file.Paths
 

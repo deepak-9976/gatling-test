@@ -1,6 +1,6 @@
-package gatling.test.example.simulation
+package com.github.deepak9976.gatlingtest.simulation
 
-import gatling.test.example.simulation.PerfTestConfig.{baseUrl, durationMin, maxResponseTimeMs, meanResponseTimeMs}
+import com.github.deepak9976.gatlingtest.simulation.PerfTestConfig.{baseUrl, durationMin, maxResponseTimeMs, meanResponseTimeMs}
 import io.gatling.core.Predef.{StringBody, constantUsersPerSec, global, scenario, _}
 import io.gatling.http.Predef.{http, status, _}
 import scala.language.postfixOps

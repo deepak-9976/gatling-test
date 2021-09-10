@@ -1,6 +1,6 @@
-package gatling.test.example.helper
+package com.github.deepak9976.gatlingtest.helper
 
-import gatling.test.example.simulation.PerfTestConfig
+import com.github.deepak9976.gatlingtest.simulation.PerfTestConfig
 import io.gatling.app.Gatling
 import io.gatling.core.config.GatlingPropertiesBuilder
 

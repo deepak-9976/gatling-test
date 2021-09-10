@@ -1,4 +1,4 @@
-package gatling.test.example.simulation
+package com.github.deepak9976.gatlingtest.simulation
 
 import io.gatling.core.Predef.{constantUsersPerSec, global, scenario, _}
 import io.gatling.http.Predef.{http, status, _}

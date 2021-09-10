@@ -1,6 +1,6 @@
-package gatling.test.example.simulation
+package com.github.deepak9976.gatlingtest.simulation
 
-import gatling.test.example.simulation.SystemPropertiesUtil._
+import com.github.deepak9976.gatlingtest.simulation.SystemPropertiesUtil._
 
 object PerfTestConfig {
   val baseUrl = getAsStringOrElse("baseUrl", "http://localhost:8080")

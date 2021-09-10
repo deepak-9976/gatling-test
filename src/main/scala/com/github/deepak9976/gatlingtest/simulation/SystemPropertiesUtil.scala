@@ -1,4 +1,4 @@
-package gatling.test.example.simulation
+package com.github.deepak9976.gatlingtest.simulation
 
 import scala.sys.SystemProperties
 

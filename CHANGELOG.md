@@ -1,4 +1,4 @@
-# %NAME% Changelog
+# gatling-test Changelog
 
 ## [Unreleased]
 

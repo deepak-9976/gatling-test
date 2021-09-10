@@ -1,23 +1,20 @@
-package gatling.test.example.simulation
+package com.github.deepak9976.gatlingtest.simulation
 
-import gatling.test.example.simulation.PerfTestConfig.{baseUrl, durationMin, maxResponseTimeMs, meanResponseTimeMs}
-import io.gatling.core.Predef.{StringBody, constantUsersPerSec, global, scenario, _}
+import com.github.deepak9976.gatlingtest.simulation.PerfTestConfig.{baseUrl, durationMin, maxResponseTimeMs, meanResponseTimeMs}
+import io.gatling.core.Predef.{constantUsersPerSec, global, scenario, _}
 import io.gatling.http.Predef.{http, status, _}
 import scala.language.postfixOps
 
 import scala.concurrent.duration._
 
-class ExamplePostSimulation extends Simulation {
+class ExampleGetSimulation extends Simulation {
   val httpConf = http.baseUrl(baseUrl)
-  val postUsers = scenario("Root end point calls")
+  val getUsers = scenario("Root end point calls")
     .exec(http("root end point")
-      .post("")
-      .header("Content-Type", "application/json")
-      .header("Accept-Encoding", "gzip")
-      .body(StringBody("{}"))
+      .get("")
       .check(status.is(200))
     )
-  setUp(postUsers.inject(
+  setUp(getUsers.inject(
     constantUsersPerSec(PerfTestConfig.requestPerSecond) during (durationMin minutes))
     .protocols(httpConf))
     .assertions(
